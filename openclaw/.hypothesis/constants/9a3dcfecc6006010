@@ -1,4 +1,0 @@
-# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/pipeline/manager.py
-# hypothesis_version: 6.151.9
-
-['analyze', 'analyzed', 'classify', 'download', 'downloaded', 'error', 'failed', 'last_url', 'skipped', 'step', 'transcribe', '商业相关度过低', '缓存命中', '转录结果为空']

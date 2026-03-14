@@ -1,4 +1,0 @@
-# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/pipeline/downloader.py
-# hypothesis_version: 6.151.9
-
-['%(id)s.%(ext)s', './data/downloads', '.srt', '.vtt', '128', '<[^>]+>', 'FFmpegExtractAudio', 'NOTE', 'WEBVTT', '^\\d+$', 'audio', 'bestaudio/best', 'bilibili', 'cookiefile', 'en', 'format', 'key', 'mp3', 'outtmpl', 'postprocessors', 'preferredcodec', 'preferredquality', 'quiet', 'skip_download', 'skipped', 'subtitle', 'subtitlesformat', 'subtitleslangs', 'utf-8', 'vtt', 'writeautomaticsub', 'writesubtitles', 'zh', 'zh-Hans']

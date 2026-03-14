@@ -1,4 +1,0 @@
-# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/pipeline/classifier.py
-# hypothesis_version: 6.151.9
-
-[0.0, 0.3, 0.5, 1.0, 3000, 'business_relevance', 'content_type', 'primary_topic', 'secondary_topics', 'skip_reason', '产品推荐', '其他', '教程讲解', '未知', '案例分析', '行业分析', '观点输出']

@@ -1,0 +1,67 @@
+# OpenClaw 主配置文件
+# API keys 建议通过环境变量注入（openclaw.json 的 skills.entries.env 配置）：
+#   OPENAI_API_KEY、DEEPSEEK_API_KEY、VOLCENGINE_API_KEY、DASHSCOPE_API_KEY
+# 也支持完整路径格式覆盖：OPENCLAW__LLM_PROVIDERS__OPENAI__API_KEY=xxx
+
+llm_providers:
+  openai:
+    api_key: ""  # ⚠️ 不要在此填写真实 key！请通过 openclaw.json 的 env 字段配置 OPENAI_API_KEY
+    base_url: "https://api.openai.com/v1"
+  deepseek:
+    api_key: ""  # 或通过环境变量 DEEPSEEK_API_KEY
+    base_url: "https://api.deepseek.com/v1"
+  doubao:
+    api_key: ""  # 或通过环境变量 VOLCENGINE_API_KEY
+    base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  qwen:
+    api_key: ""  # 或通过环境变量 DASHSCOPE_API_KEY
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  openrouter:
+    api_key: ""  # 或通过环境变量 OPENROUTER_API_KEY（推荐新手，一个key访问多模型）
+    base_url: "https://openrouter.ai/api/v1"
+  minimax:
+    api_key: ""  # 或通过环境变量 MINIMAX_API_KEY（MiniMax M2.5，1M上下文）
+    base_url: "https://api.minimax.chat/v1"
+  zhipu:
+    api_key: ""  # 或通过环境变量 ZHIPU_API_KEY（智谱GLM，Flash版免费）
+    base_url: "https://open.bigmodel.cn/api/paas/v4"
+  moonshot:
+    api_key: ""  # 或通过环境变量 MOONSHOT_API_KEY（Kimi，长文本强）
+    base_url: "https://api.moonshot.cn/v1"
+  openclaw:
+    api_key: "openclaw"  # 使用本地 openclaw gateway，无需真实 API key
+    base_url: "http://localhost:9099/v1"  # openclaw gateway 默认端口，可通过 OPENCLAW_GATEWAY_URL 覆盖
+
+llm_preset: "cost_effective"  # cost_effective | quality | flagship | china_eco | custom
+
+platforms:
+  bilibili:
+    cookie_path: "./cookies/bilibili.txt"
+    cookie_refresh_days: 7
+    request_delay: [2.0, 6.0]
+  douyin:
+    cookie_path: "./cookies/douyin.txt"
+    cookie_refresh_days: 3
+    request_delay: [3.0, 8.0]
+  youtube:
+    cookie_path: null
+    cookie_refresh_days: 30
+    request_delay: [1.0, 4.0]
+  xiaohongshu:
+    cookie_path: "./cookies/xiaohongshu.txt"
+    cookie_refresh_days: 5
+    request_delay: [3.0, 8.0]
+
+storage:
+  db_type: "sqlite"
+  db_path: "./data/openclaw.db"
+  cache_enabled: true
+  cache_ttl_hours: 72
+
+proxy_enabled: false
+# proxy_pool:
+#   - "http://proxy1:8080"
+#   - "socks5://proxy2:1080"
+
+log_level: "INFO"
+log_file: "./logs/openclaw.log"

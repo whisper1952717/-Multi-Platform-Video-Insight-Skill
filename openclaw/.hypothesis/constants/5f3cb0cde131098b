@@ -1,4 +1,0 @@
-# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/models/types.py
-# hypothesis_version: 6.151.9
-
-[0.0, 1.0, 'analyzed', 'downloaded', 'pending', 'skipped', 'transcribed', '产品推荐', '其他', '教程讲解', '案例分析', '行业分析', '观点输出']

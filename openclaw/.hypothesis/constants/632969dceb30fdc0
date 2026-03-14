@@ -1,4 +1,0 @@
-# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/storage/sqlite_backend.py
-# hypothesis_version: 6.151.9
-
-['.', './data/openclaw.db', ';', 'SQLiteDataStore', 'id', 'publish_date', 'state', 'status', 'view_count']

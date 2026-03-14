@@ -1,0 +1,19 @@
+# 环境变量 / 密钥文件
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 数据 / 日志
+data/
+logs/
+*.log
+
+# Cookie 文件（含登录态，不提交）
+cookies/*.txt
+!cookies/.gitkeep
