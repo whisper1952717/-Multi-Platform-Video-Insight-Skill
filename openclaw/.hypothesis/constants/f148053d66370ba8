@@ -1,0 +1,4 @@
+# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/pipeline/segmenter.py
+# hypothesis_version: 6.151.9
+
+[2000, '[。！？.!?\\n]', '。']

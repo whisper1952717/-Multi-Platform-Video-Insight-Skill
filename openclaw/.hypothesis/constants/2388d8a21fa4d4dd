@@ -1,0 +1,4 @@
+# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/pipeline/cleaner.py
+# hypothesis_version: 6.151.9
+
+[0.3, 4000, '(广告|赞助商|合作推广).{0,20}', '(私信|加微信|加群).{0,20}', '[。！？.!?]', '\\s{2,}', '。', '你知道吗', '其实吧', '吧', '呀', '呢', '哈', '哎', '哦', '唉', '啊', '嗯', '嘛', '对不对', '对吧', '就是', '就是说', '怎么说呢', '然后', '这个', '那个']

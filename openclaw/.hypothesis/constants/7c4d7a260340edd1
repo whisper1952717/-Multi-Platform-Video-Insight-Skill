@@ -1,0 +1,4 @@
+# file: /home/echome/开发项目/SKILLS开发/Multi‑Platform Video Insight Skill System-kiro/openclaw/openclaw/aggregation/aggregator.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.3, 0.5, 0.6, 0.8, 'applicable_scenario', 'confidence_score', 'context', 'creators', 'framework', 'hypothesis', 'judgment', 'method', 'mode1', 'mode2', 'occurrence_count', 'quote', 'reasoning_chain', 'signal', 'support_ratio', '建议深入研究高置信度信号', '无分析结果', '暂无数据', '暂无足够数据生成洞察']
