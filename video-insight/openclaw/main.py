@@ -1,4 +1,4 @@
-"""OpenClaw CLI 入口 — Multi-Platform Video Insight Skill System."""
+"""Video Insight CLI 入口 — Multi-Platform Video Insight Skill System."""
 from __future__ import annotations
 
 import argparse
@@ -531,21 +531,21 @@ async def _run_mode2(args) -> int:
 def _make_output_path(output_format: str, mode: str) -> str:
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     ext = {"Markdown": "md", "PDF": "pdf", "JSON": "json"}.get(output_format, "md")
-    return f"openclaw_report_{mode}_{ts}.{ext}"
+    return f"video_insight_report_{mode}_{ts}.{ext}"
 
 
 # ── 参数解析 ──────────────────────────────────────────────────────────────────
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="openclaw",
-        description="OpenClaw — Multi-Platform Video Insight Skill System",
+        prog="video-insight",
+        description="Video Insight — Multi-Platform Video Insight Skill System",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
-  openclaw mode1 https://space.bilibili.com/12345 --max-videos 30
-  openclaw mode2 "AI创业" --platforms bilibili youtube --max-creators 5
-  openclaw mode1 https://www.youtube.com/@channel --use-last-config
+  video-insight mode1 https://space.bilibili.com/12345 --max-videos 30
+  video-insight mode2 "AI创业" --platforms bilibili youtube --max-creators 5
+  video-insight mode1 https://www.youtube.com/@channel --use-last-config
         """,
     )
     subparsers = parser.add_subparsers(dest="mode", required=True)

@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "openclaw"
+name = "video-insight"
 version = "0.1.0"
 description = "Multi-Platform Video Insight Skill System"
 readme = "README.md"
@@ -36,7 +36,7 @@ dev = [
 ]
 
 [project.scripts]
-openclaw = "openclaw.main:main"
+video-insight = "openclaw.main:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["openclaw"]
